@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddie TV - De Beste Reality Shows</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="resize-handle" title="Drag to resize sidebar"></div>
+            <button class="collapse-toggle-close" aria-label="Close sidebar">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="logo-container">
+                <div class="logo">
+                    <span class="logo-icon">📺</span>
+                    <span class="logo-text">Eddie TV</span>
+                </div>
+                <p class="tagline">Herinneringen herbeleven</p>
+            </div>
+
+            <nav class="channel-nav">
+                <button class="channel-btn active" data-channel="reality-tv">
+                    <span class="channel-icon">⭐</span>
+                    <span class="channel-name">Reality TV</span>
+                    <span class="channel-badge">Nieuw</span>
+                </button>
+                <button class="channel-btn" data-channel="sponsored-reality">
+                    <span class="channel-icon">💎</span>
+                    <span class="channel-name">Sponsored Reality</span>
+                    <span class="channel-count">24 shows</span>
+                </button>
+                <button class="channel-btn" data-channel="old-reality">
+                    <span class="channel-icon">🎬</span>
+                    <span class="channel-name">Old Reality</span>
+                    <span class="channel-count">156 shows</span>
+                </button>
+                <button class="channel-btn" data-channel="24-7-reality">
+                    <span class="channel-icon">🔴</span>
+                    <span class="channel-name">24/7 Reality</span>
+                    <span class="channel-badge">Live</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="sidebar-link">
+                    <span>👤</span> Mijn Profiel
+                </button>
+                <button class="sidebar-link">
+                    <span>⚙️</span> Instellingen
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Header -->
+            <header class="top-header">
+                <button class="collapse-toggle-open" aria-label="Open sidebar">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <div class="search-container">
+                    <input type="search" placeholder="Zoek je favoriete reality show..." class="search-input">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="user-actions">
+                    <button class="notification-btn">
+                        <span class="bell-icon">🔔</span>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <div class="user-profile">
+                        <img src="https://i.pravatar.cc/80?img=12" alt="User" class="profile-img">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Channel Content Sections -->
+            <div class="content-wrapper">
+                
+                <!-- Reality TV Channel -->
+                <section class="channel-content active" id="reality-tv">
+                    <!-- Hero/Featured Section -->
+                    <div class="hero-section">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=1920&h=1080&fit=crop');">
+                        </div>
+                        <div class="hero-content">
+                            <span class="hero-badge">🔥 Trending Nu</span>
+                            <h1 class="hero-title">Big Brother VIP 2024</h1>
+                            <p class="hero-description">
+                                De meest spraakmakende celebrities geïsoleerd in één huis. 
+                                Wie overleeft de spanning, de intriges en de emoties?
+                            </p>
+                            <div class="hero-meta">
+                                <span class="meta-item">⭐ 8.7/10</span>
+                                <span class="meta-item">2024</span>
+                                <span class="meta-item">16 afleveringen</span>
+                                <span class="meta-item">Drama • Reality</span>
+                            </div>
+                            <div class="hero-actions">
+                                <button class="btn-primary">
+                                    <span class="play-icon">▶</span> Nu Kijken
+                                </button>
+                                <button class="btn-secondary">
+                                    <span>ℹ️</span> Meer Info
+                                </button>
+                                <button class="btn-icon">
+                                    <span>➕</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Rows -->
+                    <div class="content-rows">
+                        
+                        <div class="content-row">
+                            <h2 class="row-title">Populair Deze Week</h2>
+                            <div class="carousel">
+                                <button class="carousel-btn prev" aria-label="Vorige">‹</button>
+                                <div class="carousel-content">
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge">Top 10</span>
+                                        </div>
+                                        <h3 class="card-title">Temptation Island</h3>
+                                        <p class="card-info">2024 • 12 afleveringen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                        </div>
+                                        <h3 class="card-title">Expeditie Robinson</h3>
+                                        <p class="card-info">2024 • 14 afleveringen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1492666673288-3c4b4576ad9c?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge">Nieuw</span>
+                                        </div>
+                                        <h3 class="card-title">De Bachelor</h3>
+                                        <p class="card-info">2024 • 10 afleveringen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                        </div>
+                                        <h3 class="card-title">Wie is de Mol?</h3>
+                                        <p class="card-info">2024 • 9 afleveringen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                        </div>
+                                        <h3 class="card-title">Love Island</h3>
+                                        <p class="card-info">2024 • 20 afleveringen</p>
+                                    </div>
+                                </div>
+                                <button class="carousel-btn next" aria-label="Volgende">›</button>
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <h2 class="row-title">Doorgaan met Kijken</h2>
+                            <div class="carousel">
+                                <button class="carousel-btn prev" aria-label="Vorige">‹</button>
+                                <div class="carousel-content">
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=400&h=600&fit=crop');">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 65%;"></div>
+                                            </div>
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                        </div>
+                                        <h3 class="card-title">The Voice of Holland</h3>
+                                        <p class="card-info">S3 E5 • 35 min. over</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=400&h=600&fit=crop');">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 22%;"></div>
+                                            </div>
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                        </div>
+                                        <h3 class="card-title">Boer Zoekt Vrouw</h3>
+                                        <p class="card-info">S12 E3 • 48 min. over</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?w=400&h=600&fit=crop');">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 88%;"></div>
+                                            </div>
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                        </div>
+                                        <h3 class="card-title">Nederland's Got Talent</h3>
+                                        <p class="card-info">S8 E2 • 12 min. over</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&h=600&fit=crop');">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 45%;"></div>
+                                            </div>
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                        </div>
+                                        <h3 class="card-title">Married at First Sight</h3>
+                                        <p class="card-info">S6 E8 • 25 min. over</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1496337589254-7e19d01cec44?w=400&h=600&fit=crop');">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 12%;"></div>
+                                            </div>
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                        </div>
+                                        <h3 class="card-title">The Real Housewives</h3>
+                                        <p class="card-info">S2 E1 • 52 min. over</p>
+                                    </div>
+                                </div>
+                                <button class="carousel-btn next" aria-label="Volgende">›</button>
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <h2 class="row-title">Reality Klassieken</h2>
+                            <div class="carousel">
+                                <button class="carousel-btn prev" aria-label="Vorige">‹</button>
+                                <div class="carousel-content">
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">Klassiek</span>
+                                        </div>
+                                        <h3 class="card-title">Big Brother 2000</h3>
+                                        <p class="card-info">1999 • 106 afleveringen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1484876065684-b683cf17d276?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">Klassiek</span>
+                                        </div>
+                                        <h3 class="card-title">Idols Classics</h3>
+                                        <p class="card-info">2003 • 24 afleveringen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1506157786151-b8491531f063?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">Klassiek</span>
+                                        </div>
+                                        <h3 class="card-title">Expeditie Robinson '00</h3>
+                                        <p class="card-info">2000 • 13 afleveringen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">Klassiek</span>
+                                        </div>
+                                        <h3 class="card-title">De Gouden Kooi</h3>
+                                        <p class="card-info">2005 • 80 afleveringen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1497911174120-42f49c5a2e4a?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">Klassiek</span>
+                                        </div>
+                                        <h3 class="card-title">Man Bijt Hond</h3>
+                                        <p class="card-info">1997 • 200+ afleveringen</p>
+                                    </div>
+                                </div>
+                                <button class="carousel-btn next" aria-label="Volgende">›</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Sponsored Reality Channel -->
+                <section class="channel-content" id="sponsored-reality">
+                    <div class="hero-section">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=1920&h=1080&fit=crop');">
+                        </div>
+                        <div class="hero-content">
+                            <span class="hero-badge">💎 Premium Content</span>
+                            <h1 class="hero-title">Luxe Life Amsterdam</h1>
+                            <p class="hero-description">
+                                Kijk mee met de meest extravagante levens van Amsterdam's elite. 
+                                Exclusieve feesten, luxe lifestyle en drama zonder grenzen.
+                            </p>
+                            <div class="hero-meta">
+                                <span class="meta-item">⭐ 9.1/10</span>
+                                <span class="meta-item">2024</span>
+                                <span class="meta-item">8 afleveringen</span>
+                                <span class="meta-item">Lifestyle • Drama</span>
+                            </div>
+                            <div class="hero-actions">
+                                <button class="btn-primary">
+                                    <span class="play-icon">▶</span> Nu Kijken
+                                </button>
+                                <button class="btn-secondary">
+                                    <span>ℹ️</span> Meer Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-rows">
+                        <div class="content-row">
+                            <h2 class="row-title">Brand Partnerships</h2>
+                            <div class="carousel">
+                                <button class="carousel-btn prev">‹</button>
+                                <div class="carousel-content">
+                                    <div class="show-card sponsored">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge sponsor">Gesponsord</span>
+                                        </div>
+                                        <h3 class="card-title">Vakantie Villa's</h3>
+                                        <p class="card-info">2024 • 10 afleveringen</p>
+                                    </div>
+                                    <div class="show-card sponsored">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge sponsor">Gesponsord</span>
+                                        </div>
+                                        <h3 class="card-title">Fashion Wars NL</h3>
+                                        <p class="card-info">2024 • 12 afleveringen</p>
+                                    </div>
+                                    <div class="show-card sponsored">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1540479859555-17af45c78602?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge sponsor">Gesponsord</span>
+                                        </div>
+                                        <h3 class="card-title">Supercar Challenge</h3>
+                                        <p class="card-info">2024 • 8 afleveringen</p>
+                                    </div>
+                                    <div class="show-card sponsored">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge sponsor">Gesponsord</span>
+                                        </div>
+                                        <h3 class="card-title">Chef's Table Reality</h3>
+                                        <p class="card-info">2024 • 15 afleveringen</p>
+                                    </div>
+                                    <div class="show-card sponsored">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge sponsor">Gesponsord</span>
+                                        </div>
+                                        <h3 class="card-title">Travel Influencers</h3>
+                                        <p class="card-info">2024 • 20 afleveringen</p>
+                                    </div>
+                                </div>
+                                <button class="carousel-btn next">›</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Old Reality Channel -->
+                <section class="channel-content" id="old-reality">
+                    <div class="hero-section vintage-hero">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1920&h=1080&fit=crop');">
+                        </div>
+                        <div class="hero-content">
+                            <span class="hero-badge">📼 Nostalgie</span>
+                            <h1 class="hero-title">De Gouden Jaren van Reality TV</h1>
+                            <p class="hero-description">
+                                Herbeleef de iconische momenten uit de beginjaren van reality televisie. 
+                                Van Big Brother tot Idols - alle klassiekers op één plek.
+                            </p>
+                            <div class="hero-meta">
+                                <span class="meta-item">1999-2010</span>
+                                <span class="meta-item">500+ afleveringen</span>
+                                <span class="meta-item">Reality Classics</span>
+                            </div>
+                            <div class="hero-actions">
+                                <button class="btn-primary">
+                                    <span class="play-icon">▶</span> Start Binge
+                                </button>
+                                <button class="btn-secondary">
+                                    <span>📚</span> Volledige Catalogus
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-rows">
+                        <div class="content-row">
+                            <h2 class="row-title">Jaren 2000 Hits</h2>
+                            <div class="carousel">
+                                <button class="carousel-btn prev">‹</button>
+                                <div class="carousel-content">
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">2000</span>
+                                        </div>
+                                        <h3 class="card-title">Big Brother Seizoen 1</h3>
+                                        <p class="card-info">Waar het allemaal begon</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">2001</span>
+                                        </div>
+                                        <h3 class="card-title">Popstars</h3>
+                                        <p class="card-info">De geboorte van K-otic</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1484876065684-b683cf17d276?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">2003</span>
+                                        </div>
+                                        <h3 class="card-title">Idols 2003</h3>
+                                        <p class="card-info">De beste jaargangen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1506157786151-b8491531f063?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">2000</span>
+                                        </div>
+                                        <h3 class="card-title">Expeditie Robinson Classic</h3>
+                                        <p class="card-info">Het oorspronkelijke avontuur</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge vintage">2005</span>
+                                        </div>
+                                        <h3 class="card-title">De Gouden Kooi</h3>
+                                        <p class="card-info">Iconisch Nederlands TV</p>
+                                    </div>
+                                </div>
+                                <button class="carousel-btn next">›</button>
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <h2 class="row-title">Meest Bekeken Klassiekers</h2>
+                            <div class="carousel">
+                                <button class="carousel-btn prev">‹</button>
+                                <div class="carousel-content">
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1497911174120-42f49c5a2e4a?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge">⭐ Fan Favoriet</span>
+                                        </div>
+                                        <h3 class="card-title">Ranking the Stars</h3>
+                                        <p class="card-info">Complete serie beschikbaar</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge">⭐ Fan Favoriet</span>
+                                        </div>
+                                        <h3 class="card-title">Het Beste TV Moment</h3>
+                                        <p class="card-info">Alle seizoenen</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge">⭐ Fan Favoriet</span>
+                                        </div>
+                                        <h3 class="card-title">Wat Vindt Nederland</h3>
+                                        <p class="card-info">Archief 1999-2008</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge">⭐ Fan Favoriet</span>
+                                        </div>
+                                        <h3 class="card-title">Sterren op het Doek</h3>
+                                        <p class="card-info">Volledige collectie</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge">⭐ Fan Favoriet</span>
+                                        </div>
+                                        <h3 class="card-title">All You Need is Love</h3>
+                                        <p class="card-info">De romantische klassiekers</p>
+                                    </div>
+                                </div>
+                                <button class="carousel-btn next">›</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 24/7 Reality Channel -->
+                <section class="channel-content" id="24-7-reality">
+                    <div class="hero-section live-hero">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=1920&h=1080&fit=crop');">
+                        </div>
+                        <div class="hero-content">
+                            <span class="hero-badge live-badge">🔴 LIVE NU</span>
+                            <h1 class="hero-title">Big Brother Huis - Live Feeds</h1>
+                            <p class="hero-description">
+                                24/7 toegang tot alle camera's in het Big Brother huis. 
+                                Mis niets van de actie, drama en emoties.
+                            </p>
+                            <div class="hero-meta">
+                                <span class="meta-item live-viewers">👥 12,483 kijkers</span>
+                                <span class="meta-item">8 Camera Streams</span>
+                                <span class="meta-item">Live Chat Beschikbaar</span>
+                            </div>
+                            <div class="hero-actions">
+                                <button class="btn-primary live-btn">
+                                    <span class="live-pulse"></span> Bekijk Live
+                                </button>
+                                <button class="btn-secondary">
+                                    <span>🎥</span> Kies Camera
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-rows">
+                        <div class="content-row">
+                            <h2 class="row-title">🔴 Live Streams</h2>
+                            <div class="carousel">
+                                <button class="carousel-btn prev">‹</button>
+                                <div class="carousel-content">
+                                    <div class="show-card live-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶ LIVE</button>
+                                            </div>
+                                            <span class="card-badge live">🔴 LIVE</span>
+                                        </div>
+                                        <h3 class="card-title">Woonkamer Feed</h3>
+                                        <p class="card-info live-info">8,234 kijkers nu</p>
+                                    </div>
+                                    <div class="show-card live-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1540479859555-17af45c78602?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶ LIVE</button>
+                                            </div>
+                                            <span class="card-badge live">🔴 LIVE</span>
+                                        </div>
+                                        <h3 class="card-title">Keuken Camera</h3>
+                                        <p class="card-info live-info">5,127 kijkers nu</p>
+                                    </div>
+                                    <div class="show-card live-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶ LIVE</button>
+                                            </div>
+                                            <span class="card-badge live">🔴 LIVE</span>
+                                        </div>
+                                        <h3 class="card-title">Tuin Overzicht</h3>
+                                        <p class="card-info live-info">3,891 kijkers nu</p>
+                                    </div>
+                                    <div class="show-card live-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶ LIVE</button>
+                                            </div>
+                                            <span class="card-badge live">🔴 LIVE</span>
+                                        </div>
+                                        <h3 class="card-title">Slaapkamer 1</h3>
+                                        <p class="card-info live-info">6,542 kijkers nu</p>
+                                    </div>
+                                    <div class="show-card live-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶ LIVE</button>
+                                            </div>
+                                            <span class="card-badge live">🔴 LIVE</span>
+                                        </div>
+                                        <h3 class="card-title">Multi-Cam View</h3>
+                                        <p class="card-info live-info">11,203 kijkers nu</p>
+                                    </div>
+                                </div>
+                                <button class="carousel-btn next">›</button>
+                            </div>
+                        </div>
+
+                        <div class="content-row">
+                            <h2 class="row-title">Beste Momenten Vandaag</h2>
+                            <div class="carousel">
+                                <button class="carousel-btn prev">‹</button>
+                                <div class="carousel-content">
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge hot">🔥 Trending</span>
+                                        </div>
+                                        <h3 class="card-title">Grote Ruzie in Keuken</h3>
+                                        <p class="card-info">2 uur geleden • 3:24</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge hot">🔥 Trending</span>
+                                        </div>
+                                        <h3 class="card-title">Romantisch Moment</h3>
+                                        <p class="card-info">4 uur geleden • 5:12</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1492666673288-3c4b4576ad9c?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge hot">🔥 Trending</span>
+                                        </div>
+                                        <h3 class="card-title">Grappige Situatie</h3>
+                                        <p class="card-info">6 uur geleden • 2:45</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge hot">🔥 Trending</span>
+                                        </div>
+                                        <h3 class="card-title">Strategische Alliantie</h3>
+                                        <p class="card-info">8 uur geleden • 4:33</p>
+                                    </div>
+                                    <div class="show-card">
+                                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=600&fit=crop');">
+                                            <div class="card-overlay">
+                                                <button class="play-overlay">▶</button>
+                                            </div>
+                                            <span class="card-badge hot">🔥 Trending</span>
+                                        </div>
+                                        <h3 class="card-title">Emotionele Breakdown</h3>
+                                        <p class="card-info">10 uur geleden • 6:21</p>
+                                    </div>
+                                </div>
+                                <button class="carousel-btn next">›</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Video Player Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-content">
+            <button class="video-close-btn" aria-label="Close video">✕</button>
+            <div class="video-player-wrapper">
+                <video id="videoPlayer" controls autoplay>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2 class="video-title" id="videoTitle">Title</h2>
+                <p class="video-description" id="videoDescription">Description</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
