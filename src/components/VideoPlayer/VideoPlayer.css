@@ -1,0 +1,150 @@
+.video-player-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0A0E1A;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.video-close-btn {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1002;
+  font-weight: bold;
+}
+
+.video-close-btn:hover {
+  background: #3B82F6;
+  border-color: #3B82F6;
+  transform: rotate(90deg) scale(1.1);
+}
+
+.video-player-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+.video-player-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 4rem 0 2rem;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video-info {
+  padding: 2rem 0;
+}
+
+.video-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.video-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  max-width: 900px;
+}
+
+@media (max-width: 1200px) {
+  .video-player-content {
+    padding: 1.5rem;
+  }
+
+  .video-player-wrapper {
+    margin: 3rem 0 1.5rem;
+  }
+
+  .video-title {
+    font-size: 2rem;
+  }
+
+  .video-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-close-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .video-player-content {
+    padding: 1rem;
+  }
+
+  .video-player-wrapper {
+    margin: 2.5rem 0 1rem;
+    border-radius: 8px;
+  }
+
+  .video-title {
+    font-size: 1.75rem;
+  }
+
+  .video-description {
+    font-size: 0.95rem;
+  }
+
+  .video-info {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-close-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.125rem;
+  }
+
+  .video-player-wrapper {
+    margin: 2rem 0 1rem;
+  }
+
+  .video-title {
+    font-size: 1.5rem;
+  }
+
+  .video-description {
+    font-size: 0.875rem;
+  }
+}

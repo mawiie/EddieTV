@@ -1,0 +1,209 @@
+.show-card {
+  flex: 0 0 auto;
+  width: 360px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.show-card:hover {
+  transform: translateY(-6px);
+}
+
+.show-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #000000;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+.show-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.show-card:hover .show-card-image {
+  transform: scale(1.05);
+}
+
+.show-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+}
+
+.show-card:hover .show-card-overlay {
+  opacity: 1;
+}
+
+.play-overlay {
+  width: 70px;
+  height: 70px;
+  background: #3B82F6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.85);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+}
+
+.show-card:hover .play-overlay {
+  transform: scale(1);
+  background: #2563EB;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.8);
+}
+
+.play-icon {
+  color: white;
+  font-size: 1.875rem;
+  margin-left: 4px;
+}
+
+.live-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #EF4444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.6);
+  z-index: 2;
+}
+
+.live-dot {
+  font-size: 10px;
+  color: white;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(220, 38, 38, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.8);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.show-card-info {
+  padding: 1rem;
+}
+
+.show-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  line-height: 1.4;
+}
+
+.show-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.95rem;
+  color: #94a3b8;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.meta-separator {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.show-duration {
+  font-weight: 500;
+}
+
+.show-rating {
+  color: #FCD34D;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.rating-icon {
+  font-size: 0.875rem;
+}
+
+.show-year {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.show-sponsor {
+  padding: 0.25rem 0.5rem;
+  background: rgba(6, 182, 212, 0.15);
+  border-radius: 4px;
+  color: #06B6D4;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .show-card {
+    width: 250px;
+  }
+
+  .show-card-title {
+    font-size: 1rem;
+  }
+
+  .show-card-meta {
+    font-size: 0.8rem;
+  }
+
+  .play-overlay {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-icon {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .show-card {
+    width: 200px;
+  }
+}

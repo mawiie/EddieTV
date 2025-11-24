@@ -1,0 +1,375 @@
+export const channelsData = [
+  {
+    id: 'reality-tv',
+    name: 'Reality TV',
+    shortcut: '1',
+    description: 'De beste reality shows van nu',
+    hero: {
+      title: 'Big Brother',
+      subtitle: 'Seizoen 2024',
+      description: 'Volg de meest intense momenten in het Big Brother huis. Nieuwe afleveringen elke avond om 20:00 uur.',
+      backgroundImage: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=1920&q=80',
+      cta: 'Nu Kijken'
+    },
+    sections: [
+      {
+        title: 'Populair Deze Week',
+        shows: [
+          {
+            id: 1,
+            title: 'Big Brother',
+            image: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=400&q=80',
+            duration: '45 min',
+            rating: '8.5'
+          },
+          {
+            id: 2,
+            title: 'The Voice',
+            image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&q=80',
+            duration: '60 min',
+            rating: '8.2'
+          },
+          {
+            id: 3,
+            title: 'Temptation Island',
+            image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&q=80',
+            duration: '50 min',
+            rating: '7.8'
+          },
+          {
+            id: 4,
+            title: 'Expeditie Robinson',
+            image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&q=80',
+            duration: '55 min',
+            rating: '8.7'
+          },
+          {
+            id: 5,
+            title: 'Love Island',
+            image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80',
+            duration: '45 min',
+            rating: '7.5'
+          },
+          {
+            id: 6,
+            title: 'De Verraders',
+            image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400&q=80',
+            duration: '50 min',
+            rating: '8.9'
+          }
+        ]
+      },
+      {
+        title: 'Nieuw Dit Seizoen',
+        shows: [
+          {
+            id: 101,
+            title: 'Dance Dance Dance',
+            image: 'https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400&q=80',
+            duration: '65 min',
+            rating: '7.9'
+          },
+          {
+            id: 102,
+            title: 'The Masked Singer',
+            image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&q=80',
+            duration: '60 min',
+            rating: '8.3'
+          },
+          {
+            id: 103,
+            title: 'Married at First Sight',
+            image: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&q=80',
+            duration: '55 min',
+            rating: '8.0'
+          },
+          {
+            id: 104,
+            title: 'Boer Zoekt Vrouw',
+            image: 'https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=400&q=80',
+            duration: '50 min',
+            rating: '8.6'
+          },
+          {
+            id: 105,
+            title: 'Wie is de Mol?',
+            image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&q=80',
+            duration: '60 min',
+            rating: '9.2'
+          }
+        ]
+      },
+      {
+        title: 'Doorgaan Met Kijken',
+        shows: [
+          {
+            id: 201,
+            title: 'All You Need Is Love',
+            image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=80',
+            duration: '45 min',
+            rating: '7.7'
+          },
+          {
+            id: 202,
+            title: 'Nederland\'s Got Talent',
+            image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?w=400&q=80',
+            duration: '70 min',
+            rating: '8.1'
+          },
+          {
+            id: 203,
+            title: 'The Real Housewives',
+            image: 'https://images.unsplash.com/photo-1496337589254-7e19d01cec44?w=400&q=80',
+            duration: '50 min',
+            rating: '7.4'
+          },
+          {
+            id: 204,
+            title: 'De Slimste Mens',
+            image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&q=80',
+            duration: '40 min',
+            rating: '8.8'
+          }
+        ]
+      },
+      {
+        title: 'Top Rated',
+        shows: [
+          {
+            id: 301,
+            title: 'Utopia',
+            image: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400&q=80',
+            duration: '60 min',
+            rating: '9.0'
+          },
+          {
+            id: 302,
+            title: 'De Verraders',
+            image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400&q=80',
+            duration: '50 min',
+            rating: '8.9'
+          },
+          {
+            id: 303,
+            title: 'Expeditie Robinson',
+            image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&q=80',
+            duration: '55 min',
+            rating: '8.7'
+          },
+          {
+            id: 304,
+            title: 'Big Brother VIP',
+            image: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=400&q=80',
+            duration: '48 min',
+            rating: '8.6'
+          },
+          {
+            id: 305,
+            title: 'The Voice Senior',
+            image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&q=80',
+            duration: '55 min',
+            rating: '8.5'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'sponsored-reality',
+    name: 'Sponsored Reality',
+    shortcut: '2',
+    description: 'Reality shows met exclusive brand partnerships',
+    hero: {
+      title: 'Beste Zangers',
+      subtitle: 'Powered by Heineken',
+      description: 'Nederlandse artiesten brengen hun favoriete nummers. Met exclusieve optredens en behind-the-scenes content.',
+      backgroundImage: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1920&q=80',
+      cta: 'Begin Met Kijken',
+      sponsor: 'Heineken'
+    },
+    sections: [
+      {
+        title: 'Brand Partnerships',
+        shows: [
+          {
+            id: 7,
+            title: 'Beste Zangers',
+            image: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&q=80',
+            duration: '60 min',
+            rating: '8.4',
+            sponsor: 'Heineken'
+          },
+      {
+        id: 8,
+        title: 'MasterChef',
+        image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&q=80',
+        duration: '55 min',
+        rating: '8.1',
+        sponsor: 'AH'
+      },
+      {
+        id: 9,
+        title: 'Heel Holland Bakt',
+        image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80',
+        duration: '50 min',
+        rating: '8.6',
+        sponsor: 'Dr. Oetker'
+      },
+      {
+        id: 10,
+        title: 'Dance Dance Dance',
+        image: 'https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400&q=80',
+        duration: '65 min',
+        rating: '7.9',
+        sponsor: 'Nike'
+      },
+      {
+        id: 11,
+        title: 'The Masked Singer',
+        image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&q=80',
+        duration: '60 min',
+        rating: '8.3',
+        sponsor: 'Bol.com'
+      },
+      {
+        id: 12,
+        title: 'All You Need Is Love',
+        image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=80',
+        duration: '45 min',
+        rating: '7.7',
+        sponsor: 'KLM'
+      }
+    ]
+  },
+  {
+    id: 'old-reality',
+    name: 'Old Reality',
+    shortcut: '3',
+    description: 'Klassieke reality TV uit het verleden',
+    hero: {
+      title: 'Big Brother 2000',
+      subtitle: 'Het Allereerste Seizoen',
+      description: 'Herbeleef de sensatie van het eerste Big Brother seizoen uit 2000. Waar het allemaal begon!',
+      backgroundImage: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1920&q=80',
+      cta: 'Herbekijk Nu'
+    },
+    shows: [
+      {
+        id: 13,
+        title: 'Big Brother 2000',
+        image: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&q=80',
+        duration: '40 min',
+        rating: '9.1',
+        year: '2000'
+      },
+      {
+        id: 14,
+        title: 'Idols 2003',
+        image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&q=80',
+        duration: '50 min',
+        rating: '8.8',
+        year: '2003'
+      },
+      {
+        id: 15,
+        title: 'Popstars 2001',
+        image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80',
+        duration: '45 min',
+        rating: '7.9',
+        year: '2001'
+      },
+      {
+        id: 16,
+        title: 'Robinson 2000',
+        image: 'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=400&q=80',
+        duration: '50 min',
+        rating: '8.5',
+        year: '2000'
+      },
+      {
+        id: 17,
+        title: 'Nederland Zoekt Idool',
+        image: 'https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=400&q=80',
+        duration: '55 min',
+        rating: '8.2',
+        year: '2002'
+      },
+      {
+        id: 18,
+        title: 'The Golden Cage',
+        image: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=400&q=80',
+        duration: '30 min',
+        rating: '7.4',
+        year: '2001'
+      }
+    ]
+  },
+  {
+    id: '24-7-reality',
+    name: '24/7 Reality',
+    shortcut: '4',
+    description: 'Non-stop reality content, altijd iets te kijken',
+    hero: {
+      title: '24/7 Live Streams',
+      subtitle: 'Altijd Online',
+      description: 'Mis nooit meer een moment! Bekijk alle live feeds en highlights wanneer je maar wilt.',
+      backgroundImage: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=1920&q=80',
+      cta: 'Start Live Stream'
+    },
+    shows: [
+      {
+        id: 19,
+        title: 'BB Live Feed #1',
+        image: 'https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=400&q=80',
+        duration: 'LIVE',
+        rating: '7.8',
+        isLive: true
+      },
+      {
+        id: 20,
+        title: 'BB Live Feed #2',
+        image: 'https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=400&q=80',
+        duration: 'LIVE',
+        rating: '7.6',
+        isLive: true
+      },
+      {
+        id: 21,
+        title: 'Utopia Stream',
+        image: 'https://images.unsplash.com/photo-1464047736614-af63643285bf?w=400&q=80',
+        duration: 'LIVE',
+        rating: '8.0',
+        isLive: true
+      },
+      {
+        id: 22,
+        title: 'TI After Hours',
+        image: 'https://images.unsplash.com/photo-1502301103665-0b95cc738daf?w=400&q=80',
+        duration: 'LIVE',
+        rating: '7.5',
+        isLive: true
+      },
+      {
+        id: 23,
+        title: 'Behind The Scenes',
+        image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&q=80',
+        duration: 'LIVE',
+        rating: '8.2',
+        isLive: true
+      },
+      {
+        id: 24,
+        title: 'Highlights Reel',
+        image: 'https://images.unsplash.com/photo-1574184095549-d35c0152f137?w=400&q=80',
+        duration: '24/7',
+        rating: '8.4',
+        isLive: false
+      }
+    ]
+  }
+],
+
+export const videoSources = [
+  'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+  'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
+];
