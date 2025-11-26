@@ -4,13 +4,19 @@ import Sidebar from './components/Sidebar/Sidebar';
 import TopBar from './components/TopBar/TopBar';
 import Channel from './components/Channel/Channel';
 import VideoPlayer from './components/VideoPlayer/VideoPlayer';
+import Login from './components/Login/Login';
 import { channelsData } from './data/channelsData';
 
 function App() {
+  const [user, setUser] = useState(null);
   const [sidebarWidth, setSidebarWidth] = useState(280);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [activeChannel, setActiveChannel] = useState('reality-tv');
   const [videoData, setVideoData] = useState(null);
+
+  const handleLogin = (username) => {
+    setUser({ name: username });
+  };
 
   const handlePlayVideo = (showTitle, videoUrl) => {
     setVideoData({ title: showTitle, url: videoUrl });
@@ -23,6 +29,10 @@ function App() {
   const toggleSidebar = () => {
     setIsSidebarCollapsed(!isSidebarCollapsed);
   };
+
+  if (!user) {
+    return <Login onLogin={handleLogin} />;
+  }
 
   return (
     <div className="app">
@@ -44,6 +54,7 @@ function App() {
             <TopBar 
               isSidebarCollapsed={isSidebarCollapsed}
               onToggleSidebar={toggleSidebar}
+              userName={user.name}
             />
             <main className="main-content">
               {channelsData.map(channel => (

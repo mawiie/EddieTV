@@ -25,6 +25,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# Local Content Media (Videos and Images)
+public/content/
+
 # IDE
 .vscode/
 .idea/
