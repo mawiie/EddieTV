@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HiMenu, HiSearch, HiBell, HiUser, HiX } from 'react-icons/hi';
+import { HiMenu, HiSearch, HiBell, HiUser } from 'react-icons/hi';
 import './TopBar.css';
 
 const TopBar = ({ isSidebarCollapsed, onToggleSidebar, userName }) => {
@@ -9,7 +9,7 @@ const TopBar = ({ isSidebarCollapsed, onToggleSidebar, userName }) => {
     <header className="top-bar">
       <div className="top-bar-left">
         {isSidebarCollapsed && (
-          <button 
+          <button
             className="hamburger-btn"
             onClick={onToggleSidebar}
             aria-label="Open menu"
@@ -44,8 +44,8 @@ const TopBar = ({ isSidebarCollapsed, onToggleSidebar, userName }) => {
 
       <div className="top-bar-right">
         {!isSearchOpen && (
-          <button 
-            className="icon-btn" 
+          <button
+            className="icon-btn"
             aria-label="Zoeken"
             onClick={() => setIsSearchOpen(true)}
           >

@@ -1,31 +1,16 @@
 import React, { useRef, useEffect } from 'react';
 import { MdClose } from 'react-icons/md';
-import { HiSparkles, HiTrendingUp, HiClock, HiVideoCamera } from 'react-icons/hi';
 import './Sidebar.css';
 
-const getChannelIcon = (channelId) => {
-  switch(channelId) {
-    case 'reality-tv':
-      return <HiSparkles className="channel-icon channel-icon-star" />;
-    case 'sponsored-reality':
-      return <HiTrendingUp className="channel-icon channel-icon-diamond" />;
-    case 'old-reality':
-      return <HiClock className="channel-icon channel-icon-movie" />;
-    case '24-7-reality':
-      return <HiVideoCamera className="channel-icon channel-icon-live" />;
-    default:
-      return <HiVideoCamera className="channel-icon" />;
-  }
-};
 
-const Sidebar = ({ 
-  channels, 
-  activeChannel, 
-  onChannelSelect, 
-  width, 
-  onWidthChange, 
-  isCollapsed, 
-  onToggle 
+const Sidebar = ({
+  channels,
+  activeChannel,
+  onChannelSelect,
+  width,
+  onWidthChange,
+  isCollapsed,
+  onToggle
 }) => {
   const sidebarRef = useRef(null);
   const resizeHandleRef = useRef(null);
@@ -34,11 +19,11 @@ const Sidebar = ({
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (!isResizing.current) return;
-      
+
       const newWidth = e.clientX;
       const minWidth = 200;
       const maxWidth = 400;
-      
+
       if (newWidth >= minWidth && newWidth <= maxWidth) {
         onWidthChange(newWidth);
       }
@@ -66,14 +51,14 @@ const Sidebar = ({
   };
 
   return (
-    <aside 
+    <aside
       ref={sidebarRef}
       className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}
       style={{ width: isCollapsed ? '0' : `${width}px` }}
     >
       <div className="sidebar-content">
         <div className="sidebar-header">
-          <button 
+          <button
             className="collapse-btn"
             onClick={onToggle}
             aria-label="Sluit sidebar"
@@ -100,7 +85,6 @@ const Sidebar = ({
                   }}
                   data-shortcut={channel.shortcut}
                 >
-                  {getChannelIcon(channel.id)}
                   <div className="channel-info">
                     <span className="channel-name">{channel.name}</span>
                     <span className="channel-description">{channel.description}</span>
@@ -118,7 +102,7 @@ const Sidebar = ({
       </div>
 
       {!isCollapsed && (
-        <div 
+        <div
           ref={resizeHandleRef}
           className="resize-handle"
           onMouseDown={handleResizeStart}
