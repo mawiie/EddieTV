@@ -5,10 +5,11 @@ export const channelsData = [
     shortcut: '1',
     description: 'De beste reality shows van nu',
     hero: {
-      title: 'Big Brother',
-      subtitle: 'Seizoen 2024',
-      description: 'Volg de meest intense momenten in het Big Brother huis. Nieuwe afleveringen elke avond om 20:00 uur.',
-      backgroundImage: 'https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=1920&q=80',
+      title: 'Monique',
+      subtitle: 'Exclusieve Reality',
+      description: 'Volg het leven van Monique in deze openhartige reality serie. Een unieke kijk achter de schermen.',
+      backgroundImage: '/content/reality/monique.webp',
+      videoUrl: '/content/reality/monique.mp4',
       cta: 'Nu Kijken'
     },
     sections: [
@@ -180,12 +181,13 @@ export const channelsData = [
     shortcut: '2',
     description: 'Reality shows met exclusive brand partnerships',
     hero: {
-      title: 'Beste Zangers',
-      subtitle: 'Powered by Heineken',
-      description: 'Nederlandse artiesten brengen hun favoriete nummers. Met exclusieve optredens en behind-the-scenes content.',
-      backgroundImage: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1920&q=80',
+      title: 'Fitchannel',
+      subtitle: 'Powered by Fitchannel',
+      description: 'De ultieme fitness challenge. Volg de transformatie van onze deelnemers terwijl ze hun grenzen verleggen.',
+      backgroundImage: '/content/sponsored/fitchannel.jpg',
+      videoUrl: '/content/sponsored/fitchannel.mp4',
       cta: 'Begin Met Kijken',
-      sponsor: 'Heineken'
+      sponsor: 'Fitchannel'
     },
     sections: [
       {
@@ -315,10 +317,11 @@ export const channelsData = [
     shortcut: '3',
     description: 'Klassieke reality TV uit het verleden',
     hero: {
-      title: 'Big Brother 2000',
-      subtitle: 'Het Allereerste Seizoen',
-      description: 'Herbeleef de sensatie van het eerste Big Brother seizoen uit 2000. Waar het allemaal begon!',
-      backgroundImage: 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1920&q=80',
+      title: 'De Bauers',
+      subtitle: 'De Klassieker',
+      description: 'Herbeleef de iconische momenten met Frans en Mariska Bauer. De reality soap die Nederland veroverde.',
+      backgroundImage: '/content/old/debauers.jpeg',
+      videoUrl: '/content/old/debauers.mp4',
       cta: 'Herbekijk Nu'
     },
     sections: [
@@ -449,10 +452,11 @@ export const channelsData = [
     shortcut: '4',
     description: 'Non-stop reality content, altijd iets te kijken',
     hero: {
-      title: '24/7 Live Streams',
-      subtitle: 'Altijd Online',
-      description: 'Mis nooit meer een moment! Bekijk alle live feeds en highlights wanneer je maar wilt.',
-      backgroundImage: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=1920&q=80',
+      title: 'Bingo',
+      subtitle: '24/7 Live',
+      description: 'Non-stop bingo actie en gezelligheid. Speel mee en volg de spanning live vanuit de studio.',
+      backgroundImage: '/content/247/bingo.jpeg',
+      videoUrl: '/content/247/bingo.mp4',
       cta: 'Start Live Stream'
     },
     sections: [

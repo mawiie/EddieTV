@@ -5,9 +5,9 @@ import ShowCard from '../ShowCard/ShowCard';
 import { videoSources } from '../../data/channelsData';
 
 const Channel = ({ channel, isActive, onPlayVideo }) => {
-  const handlePlayVideo = (showTitle) => {
-    const randomVideo = videoSources[Math.floor(Math.random() * videoSources.length)];
-    onPlayVideo(showTitle, randomVideo);
+  const handlePlayVideo = (showTitle, videoUrl) => {
+    const videoToPlay = videoUrl || videoSources[Math.floor(Math.random() * videoSources.length)];
+    onPlayVideo(showTitle, videoToPlay);
   };
 
   const CarouselSection = ({ shows, sectionTitle }) => {
